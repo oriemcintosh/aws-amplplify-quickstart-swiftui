@@ -1,0 +1,25 @@
+{
+  "name": "AwsAmplifyApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@aws-amplify/backend": "^1.0.3",
+    "@aws-amplify/backend-cli": "^1.0.4",
+    "aws-cdk": "^2",
+    "aws-cdk-lib": "^2",
+    "constructs": "^10.0.0",
+    "esbuild": "^0.21.4",
+    "tsx": "^4.13.2",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "aws-amplify": "^6.3.6"
+  }
+}

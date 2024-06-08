@@ -14,6 +14,10 @@
 		B91F34592C13399B009880FE /* AwsAmplifyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91F34582C13399B009880FE /* AwsAmplifyAppTests.swift */; };
 		B91F34632C13399B009880FE /* AwsAmplifyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91F34622C13399B009880FE /* AwsAmplifyAppUITests.swift */; };
 		B91F34652C13399B009880FE /* AwsAmplifyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91F34642C13399B009880FE /* AwsAmplifyAppUITestsLaunchTests.swift */; };
+		B91F34722C13B9C4009880FE /* amplify_outputs.json in Resources */ = {isa = PBXBuildFile; fileRef = B91F34712C13B9C4009880FE /* amplify_outputs.json */; };
+		B91F34752C13CA6D009880FE /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = B91F34742C13CA6D009880FE /* AWSCognitoAuthPlugin */; };
+		B91F34772C13CA6D009880FE /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = B91F34762C13CA6D009880FE /* Amplify */; };
+		B91F347A2C13CADA009880FE /* Authenticator in Frameworks */ = {isa = PBXBuildFile; productRef = B91F34792C13CADA009880FE /* Authenticator */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,7 @@
 		B91F345E2C13399B009880FE /* AwsAmplifyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwsAmplifyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91F34622C13399B009880FE /* AwsAmplifyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwsAmplifyAppUITests.swift; sourceTree = "<group>"; };
 		B91F34642C13399B009880FE /* AwsAmplifyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwsAmplifyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B91F34712C13B9C4009880FE /* amplify_outputs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplify_outputs.json; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91F34752C13CA6D009880FE /* AWSCognitoAuthPlugin in Frameworks */,
+				B91F34772C13CA6D009880FE /* Amplify in Frameworks */,
+				B91F347A2C13CADA009880FE /* Authenticator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +131,7 @@
 			children = (
 				B91F34622C13399B009880FE /* AwsAmplifyAppUITests.swift */,
 				B91F34642C13399B009880FE /* AwsAmplifyAppUITestsLaunchTests.swift */,
+				B91F34712C13B9C4009880FE /* amplify_outputs.json */,
 			);
 			path = AwsAmplifyAppUITests;
 			sourceTree = "<group>";
@@ -143,6 +152,11 @@
 			dependencies = (
 			);
 			name = AwsAmplifyApp;
+			packageProductDependencies = (
+				B91F34742C13CA6D009880FE /* AWSCognitoAuthPlugin */,
+				B91F34762C13CA6D009880FE /* Amplify */,
+				B91F34792C13CADA009880FE /* Authenticator */,
+			);
 			productName = AwsAmplifyApp;
 			productReference = B91F34442C133998009880FE /* AwsAmplifyApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +229,10 @@
 				Base,
 			);
 			mainGroup = B91F343B2C133998009880FE;
+			packageReferences = (
+				B91F34732C13CA6C009880FE /* XCRemoteSwiftPackageReference "amplify-swift" */,
+				B91F34782C13CAD9009880FE /* XCRemoteSwiftPackageReference "amplify-ui-swift-authenticator" */,
+			);
 			productRefGroup = B91F34452C133998009880FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91F34722C13B9C4009880FE /* amplify_outputs.json in Resources */,
 				B91F344F2C13399A009880FE /* Preview Assets.xcassets in Resources */,
 				B91F344C2C13399A009880FE /* Assets.xcassets in Resources */,
 			);
@@ -588,6 +607,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B91F34732C13CA6C009880FE /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.35.1;
+			};
+		};
+		B91F34782C13CAD9009880FE /* XCRemoteSwiftPackageReference "amplify-ui-swift-authenticator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ui-swift-authenticator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B91F34742C13CA6D009880FE /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B91F34732C13CA6C009880FE /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		B91F34762C13CA6D009880FE /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B91F34732C13CA6C009880FE /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+		B91F34792C13CADA009880FE /* Authenticator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B91F34782C13CAD9009880FE /* XCRemoteSwiftPackageReference "amplify-ui-swift-authenticator" */;
+			productName = Authenticator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B91F343C2C133998009880FE /* Project object */;
 }
