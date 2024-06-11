@@ -14,10 +14,16 @@
 		B91F34592C13399B009880FE /* AwsAmplifyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91F34582C13399B009880FE /* AwsAmplifyAppTests.swift */; };
 		B91F34632C13399B009880FE /* AwsAmplifyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91F34622C13399B009880FE /* AwsAmplifyAppUITests.swift */; };
 		B91F34652C13399B009880FE /* AwsAmplifyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91F34642C13399B009880FE /* AwsAmplifyAppUITestsLaunchTests.swift */; };
-		B91F34722C13B9C4009880FE /* amplify_outputs.json in Resources */ = {isa = PBXBuildFile; fileRef = B91F34712C13B9C4009880FE /* amplify_outputs.json */; };
 		B91F34752C13CA6D009880FE /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = B91F34742C13CA6D009880FE /* AWSCognitoAuthPlugin */; };
 		B91F34772C13CA6D009880FE /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = B91F34762C13CA6D009880FE /* Amplify */; };
 		B91F347A2C13CADA009880FE /* Authenticator in Frameworks */ = {isa = PBXBuildFile; productRef = B91F34792C13CADA009880FE /* Authenticator */; };
+		B93F896F2C14E5BD00D65DF9 /* amplify_outputs.json in Resources */ = {isa = PBXBuildFile; fileRef = B93F896E2C14E5BD00D65DF9 /* amplify_outputs.json */; };
+		B93F89732C14E9A900D65DF9 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93F89702C14E9A900D65DF9 /* Todo.swift */; };
+		B93F89742C14E9A900D65DF9 /* Todo+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93F89712C14E9A900D65DF9 /* Todo+Schema.swift */; };
+		B93F89752C14E9A900D65DF9 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93F89722C14E9A900D65DF9 /* AmplifyModels.swift */; };
+		B93F89772C14E9D300D65DF9 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = B93F89762C14E9D300D65DF9 /* AWSAPIPlugin */; };
+		B93F89792C14EA8B00D65DF9 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93F89782C14EA8B00D65DF9 /* TodoViewModel.swift */; };
+		B93F897B2C14F00B00D65DF9 /* TodoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93F897A2C14F00B00D65DF9 /* TodoRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +54,12 @@
 		B91F345E2C13399B009880FE /* AwsAmplifyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwsAmplifyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91F34622C13399B009880FE /* AwsAmplifyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwsAmplifyAppUITests.swift; sourceTree = "<group>"; };
 		B91F34642C13399B009880FE /* AwsAmplifyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwsAmplifyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B91F34712C13B9C4009880FE /* amplify_outputs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplify_outputs.json; sourceTree = SOURCE_ROOT; };
+		B93F896E2C14E5BD00D65DF9 /* amplify_outputs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplify_outputs.json; sourceTree = "<group>"; };
+		B93F89702C14E9A900D65DF9 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		B93F89712C14E9A900D65DF9 /* Todo+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Todo+Schema.swift"; sourceTree = "<group>"; };
+		B93F89722C14E9A900D65DF9 /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
+		B93F89782C14EA8B00D65DF9 /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		B93F897A2C14F00B00D65DF9 /* TodoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B93F89772C14E9D300D65DF9 /* AWSAPIPlugin in Frameworks */,
 				B91F34752C13CA6D009880FE /* AWSCognitoAuthPlugin in Frameworks */,
 				B91F34772C13CA6D009880FE /* Amplify in Frameworks */,
 				B91F347A2C13CADA009880FE /* Authenticator in Frameworks */,
@@ -82,6 +94,10 @@
 		B91F343B2C133998009880FE = {
 			isa = PBXGroup;
 			children = (
+				B93F89722C14E9A900D65DF9 /* AmplifyModels.swift */,
+				B93F89702C14E9A900D65DF9 /* Todo.swift */,
+				B93F89712C14E9A900D65DF9 /* Todo+Schema.swift */,
+				B93F896E2C14E5BD00D65DF9 /* amplify_outputs.json */,
 				B91F34462C133998009880FE /* AwsAmplifyApp */,
 				B91F34572C13399B009880FE /* AwsAmplifyAppTests */,
 				B91F34612C13399B009880FE /* AwsAmplifyAppUITests */,
@@ -106,6 +122,8 @@
 				B91F34492C133998009880FE /* ContentView.swift */,
 				B91F344B2C13399A009880FE /* Assets.xcassets */,
 				B91F344D2C13399A009880FE /* Preview Content */,
+				B93F89782C14EA8B00D65DF9 /* TodoViewModel.swift */,
+				B93F897A2C14F00B00D65DF9 /* TodoRow.swift */,
 			);
 			path = AwsAmplifyApp;
 			sourceTree = "<group>";
@@ -131,7 +149,6 @@
 			children = (
 				B91F34622C13399B009880FE /* AwsAmplifyAppUITests.swift */,
 				B91F34642C13399B009880FE /* AwsAmplifyAppUITestsLaunchTests.swift */,
-				B91F34712C13B9C4009880FE /* amplify_outputs.json */,
 			);
 			path = AwsAmplifyAppUITests;
 			sourceTree = "<group>";
@@ -156,6 +173,7 @@
 				B91F34742C13CA6D009880FE /* AWSCognitoAuthPlugin */,
 				B91F34762C13CA6D009880FE /* Amplify */,
 				B91F34792C13CADA009880FE /* Authenticator */,
+				B93F89762C14E9D300D65DF9 /* AWSAPIPlugin */,
 			);
 			productName = AwsAmplifyApp;
 			productReference = B91F34442C133998009880FE /* AwsAmplifyApp.app */;
@@ -249,7 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B91F34722C13B9C4009880FE /* amplify_outputs.json in Resources */,
+				B93F896F2C14E5BD00D65DF9 /* amplify_outputs.json in Resources */,
 				B91F344F2C13399A009880FE /* Preview Assets.xcassets in Resources */,
 				B91F344C2C13399A009880FE /* Assets.xcassets in Resources */,
 			);
@@ -276,7 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B93F89792C14EA8B00D65DF9 /* TodoViewModel.swift in Sources */,
+				B93F897B2C14F00B00D65DF9 /* TodoRow.swift in Sources */,
+				B93F89752C14E9A900D65DF9 /* AmplifyModels.swift in Sources */,
 				B91F344A2C133998009880FE /* ContentView.swift in Sources */,
+				B93F89732C14E9A900D65DF9 /* Todo.swift in Sources */,
+				B93F89742C14E9A900D65DF9 /* Todo+Schema.swift in Sources */,
 				B91F34482C133998009880FE /* AwsAmplifyAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -642,6 +665,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B91F34782C13CAD9009880FE /* XCRemoteSwiftPackageReference "amplify-ui-swift-authenticator" */;
 			productName = Authenticator;
+		};
+		B93F89762C14E9D300D65DF9 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B91F34732C13CA6C009880FE /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
